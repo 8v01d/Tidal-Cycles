@@ -1,0 +1,60 @@
+-- Playing with Sounds
+-- 8v01d (infinite void)
+-- Using: Tidal Cycles
+-- Contact: thisis8v01d@gmail.com
+-- Last Revised: October 8, 2021
+
+d1 $ s "bd(3,8) drum*4"
+
+d1 silence
+
+d2 $ s "sn*2"
+
+d2 silence
+
+d3 $ every 3 (# speed "<0.9 0.8 0.7>") $ s "bd*4" # speed "1" # gain "1.2" # n "7"
+
+d3 silence
+
+d4 $ s "bd*2 ~ bd*4 ~"
+
+d4 silence
+
+d5 $ jux (rev) $ s "blip*8" # n "<g fs> b a g" # legato 2
+
+d5 silence
+
+d6 $ fast 2 $ s "~ blip*4" # crush 5
+
+d6 silence
+
+d7 $ s "blip(5,8)" # gain "0.8"
+
+d7 silence
+
+d8 $ s "blip(5,8)" # n (range 0 50 cosine) # pan (rand)
+
+d8 silence
+
+d9 $ s "blip*1"
+
+d9 silence
+
+d10 $ jux (# n 0) $ s "~ ~ blip!2" # n 1
+
+d10 silence
+
+d11 $ sound "db*8 blip*8" # pan (density 1.75 $ tri)
+
+d11 silence
+
+d12 $ juxBy 0.4 rev $ every 2 (rot "<1 3 2>") $ n "0 <0 4> [2 0] [2 3]" # sound "blip" # speed 1.5
+
+d12 silence
+
+d13 $ off 2.5 (# vowel "<a i i o a i u>")
+  $ juxBy 0.2 rev $ every 2 (rot "<1 3 2 4>") $ n "0 <0 4> [2 0] [2 3]" # sound "blip" # speed "0.75 0.5"
+
+d13 silence
+
+hush
