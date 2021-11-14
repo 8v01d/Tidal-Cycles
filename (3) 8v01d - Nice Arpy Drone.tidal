@@ -1,0 +1,29 @@
+-- Nice Arpy Drone
+-- 8v01d (infinite void)
+-- Using: Tidal Cycles
+-- Contact: thisis8v01d@gmail.com
+-- Last Revised: November 14, 2021
+
+d1
+  -- $ whenmod 8 4 (fast 2)
+  $ slow 4
+  $ loopAt 0.3
+  $ striate 4
+  $ sound "arpy:1*4 arpy arpy*2 arpy!4"
+  # room 0.6
+  # sz 0.6
+
+d2
+  -- $ every 3 (chop 4)
+  -- $ whenmod 16 6 (fast 2)
+  -- $ whenmod 8 4 (fast 2)
+  -- $ whenmod 2 4 (fast 2)
+  -- $ whenmod 24 8 (fast 2)
+  $ slow 4
+  $ loopAt 0.3
+  $ chop 3
+  $ sound "arpy:1*4 arpy arpy*2 arpy!4"
+  # room 0.6
+  # sz 0.6
+
+hush
