@@ -1,0 +1,40 @@
+-- New Stuff
+-- 8v01d (infinite void)
+-- Using: Tidal Cycles
+-- Contact: thisis8v01d@gmail.com
+-- Last Revised: November 19, 2021
+
+d1
+  $ slow 3
+  $ stutWith 4 (1/6) (|* speed "1.5")
+  -- $ whenmod 8 4 (fast 2)
+  -- $ whenmod 16 6 (fast 2)
+  -- $ struct "t*4 t/2"
+  -- $ struct "t*3 t/2 t/4"
+  -- $ struct "t*6 t/2"
+  $ up (scale (cat ["dorian","mixolydian"])
+        $ cat [
+        "0 2 0 4"
+        -- "0 2 [0 1] 0 4"
+        -- "0 2 [0 1] 0 4!2"
+        -- "0 2 [0 1] 0!3 4!2"
+        ]
+        |- 3
+        )
+  # s "superfork"
+  |+ up "<ef ef f f>"
+  # speed "0.75 0.5"
+  # sustain 1
+  # delay 0.5
+  # delayt 0.5
+  # room 0.6
+  # sz 0.1
+  # legato 1
+  # sustainpedal 0.5
+  # fshiftnote 0.5
+  # ring 0.5
+  # lpf 1000
+  # hpf 100
+  # gain 2
+
+  hush
