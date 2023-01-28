@@ -1,0 +1,60 @@
+-- Play with Arpy - FINAL
+-- 8v01d (infinite void)
+-- Using: Tidal Cycles
+-- Contact: thisis8v01d@gmail.com
+-- Last Revised: January 28, 2023
+
+d1
+  -- $ whenmod 24 8 (fast 2)
+  -- $ whenmod 2 8 (fast 2)
+  -- $ whenmod 8 4 (slow 2)
+  -- $ whenmod 4 8 (fast 2)
+  $ whenmod 16 6 (fast 2) -- intialize with this
+  $ slow 1.5
+  $ n "[e3'min3,b3'min3,e3'min2(5,8),b3'min4(5,8)]"
+  # s "arpy"
+  # legato 1
+  # room 0.6
+  # sz 0.6
+
+d1 silence
+
+d2
+  $ whenmod 16 2 (fast 2) -- intialize with this
+  -- $ whenmod 16 4 (fast 2)
+  $ slow 1.5
+  $ n "[a3'min3,f3'min3,a3'min2(5,8),f3'min4(5,8)]"
+  # s "arpy"
+  # legato 1
+  # room 0.6
+  # sz 0.6
+
+d2 silence
+
+d3
+  -- $ whenmod 8 2 (fast 2)
+  -- $ whenmod 16 4 (fast 2)
+  -- $ whenmod 2 0 (fast 2)
+  -- $ whenmod 1 1 (fast 2)
+  -- $ stutWith 2 (1/16) (|* speed "1.0")
+  -- $ stutWith 2 (1/6) (|* speed "1.5")
+  -- $ struct "t*6 t/2"
+  -- $ struct "t f t*2 f"
+  -- $ struct "t f t*6 f"
+  -- $ struct "t*6 f t/24 f"
+  $ slow 1.5
+  $ n "[g4'min2(2,6),g2'min2(8,2),g4'min2(1,2),g5'min2(6,8)]"
+  # s "arpy"
+  # legato 1
+  # room 0.6
+  # sz 0.6
+
+d3 $ silence
+
+xfade 1 $ silence
+
+xfade 2 $ silence
+
+xfade 3 $ silence
+
+hush
