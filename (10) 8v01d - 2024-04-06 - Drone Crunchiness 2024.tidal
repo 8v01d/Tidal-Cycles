@@ -1,0 +1,43 @@
+-- Drone Crunchiness 2024
+-- 8v01d (infinite void)
+-- Using: Tidal Cycles
+-- Contact: thisis8v01d@gmail.com
+-- Last Revised: April 6, 2024
+
+d1
+  -- $ superimpose ((# speed "2*12") . (# squiz (slow 2 $ range 1 16 $ sine)) . (striate "[1|9|2]") . (ply "[[1 1 2 4]|[1 1 2 2]]") . (# room "0 0.5") . (# sz "0.2 0.4"))
+  -- $ whenmod 8 2 (fast 2)
+  -- $ whenmod 16 4 (fast 2)
+  -- $ whenmod 2 0 (fast 2)
+  -- $ whenmod 1 1 (fast 2)
+  -- $ stutWith 2 (1/6) (|* speed "1.0")
+  -- $ stutWith 2 (1/2) (|* speed "1.0")
+  -- $ stutWith 5 (1/16) (|* speed "1.0")
+  -- $ stutWith 8 (4/24) (|* speed "1.0")
+  -- $ struct "t*6 t/2"
+  -- $ struct "~ t*2 t/6!2"
+  -- $ struct "t*2 t/6"
+  -- $ struct "t*9 t/4"
+  -- $ jux (hurry 2)
+  -- $ stutter 4 (1/16)
+  -- $ stutter 8 (6/2)
+  $ slow 25
+  -- $ stutWith 3 (1/6) (|* 6)
+  -- $ degradeBy 0.6
+  -- $ every 3 (chop 4)
+  -- $ jux rev $ chunk 2 (fast 8 . (|- n 12)) $ off 0.25 (|+ 7) $ struct (iter 2 "t(6,9)")
+  $ loopAt 0.5
+  $ striate 2
+  $ s "arpy*2 arpy/3 arpy*4 arpy!2"
+  # amp 0.4
+  # room 0.6
+  # sz 0.8
+  # gain 4
+  # legato 1
+  # delay 0.2
+  # delayt 0.5
+  # delayfb 0.7
+
+xfade 1 $ silence
+
+hush
