@@ -1,0 +1,53 @@
+-- The Ritusen Scale Play Time
+-- 8v01d (infinite void)
+-- Using: Tidal Cycles
+-- Contact: thisis8v01d@gmail.com
+-- Last Revised: April 10, 2024
+
+d1
+  -- $ superimpose ((# speed "2") . (# squiz (slow 3 $ range 1 16 $ sine)) . (striate "[1|3|2]"))
+  -- $ superimpose ((# speed "2") . (# squiz (slow 2 $ range 1 16 $ sine)) . (striate "[3|4|2]"))
+  -- $ superimpose ((# speed "2") . (# squiz (slow 3 $ range 1 16 $ sine)) . (striate "[8|1|4]"))
+  -- $ superimpose ((# speed "2") . (# squiz (slow 3 $ range 1 16 $ sine)) . (striate "[2|6|1]"))
+  -- $ superimpose ((# speed "2*12") . (# squiz (slow 2 $ range 1 16 $ sine)) . (striate "[1|9|2]") . (ply "[[1 1 2 4]|[1 1 2 2]]") . (# room "0 0.5") . (# sz "0.2 0.4"))
+  -- $ whenmod 2 0 (fast 2)
+  -- $ stutWith 2 (1/6) (|* speed "1.0")
+  -- $ stutWith 2 (1/2) (|* speed "1.0")
+  -- $ stutWith 5 (1/16) (|* speed "1.0")
+  -- $ stutWith 8 (4/24) (|* speed "1.0")
+  -- $ struct "t*6 t/2"
+  -- $ struct "t f t*6 f"
+  -- $ struct "~ t*2 t/6!2"
+  -- $ stutWith 3 (1/6) (|* 6)
+  -- $ struct "t*6 t/4"
+  -- $ struct "t*5 t/4"
+  -- $ jux (hurry 2)
+  -- $ stutWith 3 (1/6) (|* 6)
+  -- $ stutter 4 (1/16)
+  -- $ stutter 8 (6/2)
+  -- $ degradeBy 0.6
+  -- $ every 3 (chop 4)
+  -- $ striate 2
+  -- $ jux rev $ chunk 3 (fast 2 . (|- n 12)) $ off 0.25 (|+ 7) $ struct (iter 4 "t(2,4)")
+  -- $ jux rev $ chunk 3 (fast 2 . (|- n 12)) $ off 0.25 (|+ 7) $ struct (iter 4 "t(8,1)")
+  -- $ jux rev $ chunk 8 (fast 1.5 . (|- n 12)) $ off 0.25 (|+ 7) $ struct (iter 4 "t(6,1)")
+  $ n (scale "ritusen" "5 .. 2")
+  # sound "arpy*6!2 arpy*4 arpy:2*6"
+  # legato 1
+  # room 0.6
+  # sz 0.8
+  # timescalewin 1
+  # amp 0.4
+  # sustain 1
+  # resonance 0.9
+  # hold 1
+  # gain 4
+  # legato 0.5
+  # delay 0.2
+  # delayt 0.9
+  # delayt 1
+  # delayfb 0.7
+
+xfade 1 $ silence
+
+hush
