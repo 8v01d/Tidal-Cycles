@@ -1,0 +1,53 @@
+-- Happy Uplifting Piano (Dissonance)
+-- 8v01d (infinite void)
+-- Using: Tidal Cycles
+-- Contact: thisis8v01d@gmail.com
+-- Last Revised: April 22, 2024
+
+d1
+    $ chunk 4 (hurry 2) $ every 4 (fast 2)
+    -- $ whenmod 8 2 (fast 2)
+    -- $ whenmod 16 4 (fast 2)
+    -- $ whenmod 2 0 (fast 2)
+    -- $ whenmod 1 1 (fast 2)
+    -- $ jux rev $ chunk 3 (fast 2 . (|- n 12)) $ off 0.25 (|+ 7) $ struct (iter 4 "t(2,4)")
+    -- $ jux rev $ chunk 3 (fast 2 . (|- n 12)) $ off 0.25 (|+ 7) $ struct (iter 4 "t(8,3)")
+    -- $ jux rev $ chunk 4 (fast 1.5 . (|- n 12)) $ off 0.25 (|+ 7) $ struct (iter 4 "t(6,4)")
+    $ loopAt 0.3
+    $ slow 6
+    $ n (scale "hexSus" "9 .. 2")
+    # s "superpiano*2? ~ superpiano*6 ~ ~ superpiano!3 ~"
+    |+ n 4
+    # legato 1
+    # lpf (range 100 1200 (slow 10 $ sine))
+    # room 0.6
+    # sz 0.6
+    # delay 0.4
+    # delayt 0.8
+
+d1 $ silence
+
+d2
+    -- $ chunk 4 (hurry 2) $ every 4 (fast 2)
+    -- $ whenmod 8 2 (fast 2)
+    -- $ whenmod 16 4 (fast 2)
+    -- $ whenmod 2 0 (fast 2)
+    -- $ whenmod 1 1 (fast 2)
+    -- $ jux rev $ chunk 3 (fast 2 . (|- n 12)) $ off 0.25 (|+ 7) $ struct (iter 4 "t(2,4)")
+    -- $ jux rev $ chunk 3 (fast 2 . (|- n 12)) $ off 0.25 (|+ 7) $ struct (iter 4 "t(8,3)")
+    -- $ jux rev $ chunk 4 (fast 1.5 . (|- n 12)) $ off 0.25 (|+ 7) $ struct (iter 4 "t(6,4)")
+    $ loopAt 0.3
+    $ slow 6
+    $ n (scale "hexSus" "6 .. 3")
+    # s "superpiano*2? ~ superpiano*6 ~ ~ superpiano!3 ~"
+    |+ n 4
+    # legato 1
+    # lpf (range 100 1200 (slow 10 $ sine))
+    # room 0.6
+    # sz 0.6
+    # delay 0.4
+    # delayt 0.8
+
+d2 $ silence
+
+hush
