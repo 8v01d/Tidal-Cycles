@@ -2,7 +2,7 @@
 Tidal Cycles Files - Written by 8v01d
 
 | Code File on GitHub | YouTube Video | YouTube Video Title |
-| ------------- | ------------- | ------------- |
+| :---: | ------------- | ------------- |
 | 1 | https://youtu.be/D1aFjUIjJbo | (1) Tidal Cycles - 8v01d - First File |
 | 2 | https://youtu.be/H5K2VjFpG7Q | (2) Tidal Cycles - 8v01d - Playing with Sounds |
 | 3 | https://youtu.be/DWa5DpGf8-o | (3) Tidal Cycles - 8v01d - Nice Arpy Drone |
