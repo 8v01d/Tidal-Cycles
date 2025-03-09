@@ -1,5 +1,4 @@
 # Tidal Cycles
-Tidal Cycles Files - Written by 8v01d
 
 | Code File on GitHub | YouTube Video Link |
 | :---: | ------------- |
